@@ -15,9 +15,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="details" element={<Details />} />
         </Routes>
-        <p>
-          Website under construction!
-        </p>
       </header>
     </div>
   );
