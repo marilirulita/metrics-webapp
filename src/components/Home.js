@@ -5,7 +5,7 @@ const Home = () => {
 
   const url1 = 'https://financialmodelingprep.com/api/v3/stock-screener?marketCapMoreThan=1000000000&betaMoreThan=1&volumeMoreThan=10000&exchange=NASDAQ&dividendMoreThan=0&limit=100&apikey=739ea7778d9cd30c6b10af22ad6a6b1a';
 
-  const exchange = ['ETF', 'MUTUAL_FUND', 'COMMODITY', 'INDEX', 'CRYPTO', 'FOREX', 'TSX', 'AMEX', 'NASDAQ', 'NYSE', 'EURONEXT', 'XETRA', 'NSE', 'LSE'];
+  // const exchange = ['ETF', 'MUTUAL_FUND', 'COMMODITY', 'INDEX', 'CRYPTO', 'FOREX', 'TSX', 'AMEX', 'NASDAQ', 'NYSE', 'EURONEXT', 'XETRA', 'NSE', 'LSE'];
 
   const getApiData = async () => {
     const getData = await fetch(url1);
@@ -27,17 +27,22 @@ const Home = () => {
   };
   return (
     <div>
-      <h2>Select exchange data to filter</h2>
-
-      {exchange.map((ex) => (
-        <div key={ex}>
-          <div style={elementStyle}>{ex}</div>
-          <h3>Companies</h3>
-          <div style={cotainerStyle}>
-            {state.map((com) => <div key={com} style={elementStyle}>{com.companyName}</div>)}
-          </div>
-        </div>
-      ))}
+      <div style={elementStyle}>
+        <img src="/" alt="" />
+        <h2>NASDAQ</h2>
+      </div>
+      <h4>STATS BY COMPANIES</h4>
+      <div style={cotainerStyle}>
+        {state.map((com, i) => {
+          const index = `kei${i}`;
+          return (
+            <div key={index} style={elementStyle}>
+              <img src="/" alt="" />
+              <h4>{com.companyName}</h4>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
