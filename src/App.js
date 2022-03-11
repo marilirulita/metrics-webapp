@@ -18,12 +18,11 @@ function App() {
     <div className="App">
       <nav>
         <Link to="/"><RiArrowLeftSLine size="25px" /></Link>
-        <span>{location.pathname === '/details' ? 'Company Stock' : 'Higher Market Cap'}</span>
+        <h3>{location.pathname === '/details' ? 'Company Stock' : 'Higher Market Cap'}</h3>
         <div>
           <span><BiMicrophone /></span>
           <span><FiSettings /></span>
         </div>
-
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />

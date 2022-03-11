@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { RiArrowRightCircleLine } from 'react-icons/ri';
-import { BsGraphUp, BsFileBarGraphFill } from 'react-icons/bs';
+import { BsGraphUp, BsFileBarGraph } from 'react-icons/bs';
 
 const Home = () => {
   const [state, setState] = useState([]);
@@ -16,12 +16,18 @@ const Home = () => {
   };
 
   useEffect(() => {
-    // getApiData();
+    getApiData();
   }, []);
 
-  const elementStyle = {
+  const headerStyle = {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
     border: '1px solid gray',
     padding: '10px',
+  };
+  const headerStyleChil = {
+    display: 'flex',
   };
   const cotainerStyle = {
     display: 'grid',
@@ -29,13 +35,27 @@ const Home = () => {
   };
   const backImage = {
     color: 'blue',
-    fontSize: '100px',
+  };
+  const elementStyle = {
+    padding: '10px',
+    display: 'flex',
+    flexDirection: 'column',
+  };
+  const elementHeaderStyle = {
+    display: 'flex',
+    justifyContent: 'space-between',
+  };
+  const elementTextSyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    textAlign: 'right',
+    margin: '10px 0',
   };
   return (
-    <div>
-      <div style={elementStyle}>
-        <span><BsGraphUp style={backImage} /></span>
-        <h2>NASDAQ</h2>
+    <div className="home-container">
+      <div style={headerStyle}>
+        <span style={headerStyleChil}><BsGraphUp style={backImage} size="200px" /></span>
+        <h2 style={headerStyleChil}>NASDAQ</h2>
       </div>
       <h4>STATS BY COMPANIES</h4>
       <div style={cotainerStyle}>
@@ -43,9 +63,17 @@ const Home = () => {
           const index = `kei${i}`;
           return (
             <div key={index} style={elementStyle}>
-              <span><BsFileBarGraphFill style={backImage} /></span>
-              <Link to="/details"><RiArrowRightCircleLine /></Link>
-              <h4>{com.companyName}</h4>
+              <div style={elementHeaderStyle}>
+                <span><BsFileBarGraph style={backImage} size="100px" /></span>
+                <Link to="/details"><RiArrowRightCircleLine size="30px" color="blue" /></Link>
+              </div>
+              <div style={elementTextSyle}>
+                <h3>{com.companyName}</h3>
+                <span>
+                  $
+                  {com.price}
+                </span>
+              </div>
             </div>
           );
         })}
