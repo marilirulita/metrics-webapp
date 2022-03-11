@@ -45,3 +45,26 @@ nav svg {
   display: flex;
   flex-direction: column;
 }
+
+.header-style {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid gray;
+  padding: 10px;
+};
+
+.header-style-chil {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid gray;
+  padding: 10px;
+};
+
+.element-text-style {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin: 10px 0;
+};

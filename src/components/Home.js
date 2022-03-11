@@ -14,16 +14,6 @@ const Home = () => {
     dispatch(getFinancialData());
   }, []);
 
-  const headerStyle = {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    border: '1px solid gray',
-    padding: '10px',
-  };
-  const headerStyleChil = {
-    display: 'flex',
-  };
   const cotainerStyle = {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
@@ -48,9 +38,9 @@ const Home = () => {
   };
   return (
     <div className="home-container">
-      <div style={headerStyle}>
-        <span style={headerStyleChil}><BsGraphUp style={backImage} size="200px" /></span>
-        <h2 style={headerStyleChil}>NASDAQ</h2>
+      <div className="header-style">
+        <span className="header-style-chil"><BsGraphUp style={backImage} size="200px" /></span>
+        <h2 className="header-style-chil">NASDAQ</h2>
       </div>
       <h4>STATS BY COMPANIES</h4>
       <div style={cotainerStyle}>
@@ -60,7 +50,7 @@ const Home = () => {
             <div key={index} style={elementStyle}>
               <div style={elementHeaderStyle}>
                 <span><BsFileBarGraph style={backImage} size="100px" /></span>
-                <Link to="/details"><RiArrowRightCircleLine size="30px" color="blue" /></Link>
+                <Link to="/details" state={{ ...com }}><RiArrowRightCircleLine size="30px" color="blue" /></Link>
               </div>
               <div style={elementTextSyle}>
                 <h3>{com.companyName}</h3>
