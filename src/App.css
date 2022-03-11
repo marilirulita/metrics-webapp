@@ -1,14 +1,28 @@
 .App {
-  text-align: center;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 5px;
+  color: blue;
+}
+
+nav * {
+  display: flex;
+}
+
+nav span {
+  padding: 5px;
+}
+
+nav svg {
+  color: blue;
+  padding: 0;
+  height: 100%;
 }

@@ -1,7 +1,7 @@
 import {
   Routes, Route, Link, useLocation,
 } from 'react-router-dom';
-import { MdKeyboardArrowLeft } from 'react-icons/md';
+import { RiArrowLeftSLine } from 'react-icons/ri';
 import { BiMicrophone } from 'react-icons/bi';
 import { FiSettings } from 'react-icons/fi';
 import { useEffect } from 'react';
@@ -16,18 +16,19 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <nav>
-          <Link to="/"><MdKeyboardArrowLeft /></Link>
-          <span>{location.pathname === '/details' ? 'Company Stock' : 'Higher Market Cap'}</span>
+      <nav>
+        <Link to="/"><RiArrowLeftSLine size="25px" /></Link>
+        <span>{location.pathname === '/details' ? 'Company Stock' : 'Higher Market Cap'}</span>
+        <div>
           <span><BiMicrophone /></span>
           <span><FiSettings /></span>
-        </nav>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="details" element={<Details />} />
-        </Routes>
-      </header>
+        </div>
+
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="details" element={<Details />} />
+      </Routes>
     </div>
   );
 }

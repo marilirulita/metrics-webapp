@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { RiArrowRightCircleLine } from 'react-icons/ri';
+import { BsGraphUp, BsFileBarGraphFill } from 'react-icons/bs';
 
 const Home = () => {
   const [state, setState] = useState([]);
@@ -10,11 +11,12 @@ const Home = () => {
   const getApiData = async () => {
     const getData = await fetch(url1);
     const getDataJson = await getData.json();
+    console.log(getDataJson);
     setState(getDataJson);
   };
 
   useEffect(() => {
-    getApiData();
+    // getApiData();
   }, []);
 
   const elementStyle = {
@@ -25,10 +27,14 @@ const Home = () => {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
   };
+  const backImage = {
+    color: 'blue',
+    fontSize: '100px',
+  };
   return (
     <div>
       <div style={elementStyle}>
-        <img src="/" alt="" />
+        <span><BsGraphUp style={backImage} /></span>
         <h2>NASDAQ</h2>
       </div>
       <h4>STATS BY COMPANIES</h4>
@@ -37,7 +43,7 @@ const Home = () => {
           const index = `kei${i}`;
           return (
             <div key={index} style={elementStyle}>
-              <img src="/" alt="" />
+              <span><BsFileBarGraphFill style={backImage} /></span>
               <Link to="/details"><RiArrowRightCircleLine /></Link>
               <h4>{com.companyName}</h4>
             </div>
