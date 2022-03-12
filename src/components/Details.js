@@ -7,12 +7,7 @@ const Details = () => {
   const data = location.state;
   const selectedData = ['sector', 'industry', 'country', 'marketCap', 'volume', 'lastAnnualDividend', 'beta'];
 
-  const filteredData =  selectedData.reduce((obj, key) => { 
-    const newElement = {[key]: data[key]};
-    //obj[key] = data[key];
-    return {...obj, ...newElement};
-    }, {});
-  console.log(filteredData);
+  const filteredData = selectedData.reduce((obj, key) => ({ ...obj, [key]: data[key] }), {});
 
   return (
     <div className="home-container">

@@ -17,11 +17,11 @@ function App() {
   return (
     <div className="App">
       <nav>
-        <Link to="/"><RiArrowLeftSLine size="35px" /></Link>
+        <Link to="/"><RiArrowLeftSLine size="35px" color="white" /></Link>
         <h1>{location.pathname === '/details' ? 'Company Stock' : 'Higher Market Cap'}</h1>
         <div>
-          <span><BiMicrophone size="25px" /></span>
-          <span><FiSettings size="25px" /></span>
+          <span><BiMicrophone size="25px" color="white" /></span>
+          <span><FiSettings size="25px" color="white" /></span>
         </div>
       </nav>
       <Routes>
