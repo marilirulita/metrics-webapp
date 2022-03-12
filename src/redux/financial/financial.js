@@ -18,7 +18,7 @@ export const getFinancialData = () => async (dispatch) => {
 const financialReducer = (state = initialState, action) => {
   switch (action.type) {
     case LOAD:
-      return action.data;
+      return [...action.data];
     default:
       return state;
   }
