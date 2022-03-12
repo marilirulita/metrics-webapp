@@ -1,0 +1,329 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="home-container"
+>
+  <div
+    className="header-style"
+  >
+    <span>
+      <svg
+        color="#b13967"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": "#b13967",
+          }
+        }
+        viewBox="0 0 16 16"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h1v15h15v1H0V0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5z"
+          fillRule="evenodd"
+        />
+      </svg>
+    </span>
+    <div
+      className="header-text-style"
+    >
+      <h2 />
+      <span>
+        $
+      </span>
+    </div>
+  </div>
+  <h4>
+    COMPANY STOCK BREAKDOWN
+  </h4>
+  <div
+    className="detail-section"
+  >
+    <div
+      className="details-data"
+    >
+      <h3>
+        sector
+        :
+         
+      </h3>
+      <div
+        className="details-text"
+      >
+        <span />
+        <span>
+          <svg
+            fill="currentColor"
+            height="30px"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 24 24"
+            width="30px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 11V8l4 4-4 4v-3H8v-2h4zm0-9c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8z"
+              />
+            </g>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      className="details-data"
+    >
+      <h3>
+        industry
+        :
+         
+      </h3>
+      <div
+        className="details-text"
+      >
+        <span />
+        <span>
+          <svg
+            fill="currentColor"
+            height="30px"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 24 24"
+            width="30px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 11V8l4 4-4 4v-3H8v-2h4zm0-9c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8z"
+              />
+            </g>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      className="details-data"
+    >
+      <h3>
+        country
+        :
+         
+      </h3>
+      <div
+        className="details-text"
+      >
+        <span />
+        <span>
+          <svg
+            fill="currentColor"
+            height="30px"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 24 24"
+            width="30px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 11V8l4 4-4 4v-3H8v-2h4zm0-9c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8z"
+              />
+            </g>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      className="details-data"
+    >
+      <h3>
+        marketCap
+        :
+         
+      </h3>
+      <div
+        className="details-text"
+      >
+        <span />
+        <span>
+          <svg
+            fill="currentColor"
+            height="30px"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 24 24"
+            width="30px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 11V8l4 4-4 4v-3H8v-2h4zm0-9c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8z"
+              />
+            </g>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      className="details-data"
+    >
+      <h3>
+        volume
+        :
+         
+      </h3>
+      <div
+        className="details-text"
+      >
+        <span />
+        <span>
+          <svg
+            fill="currentColor"
+            height="30px"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 24 24"
+            width="30px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 11V8l4 4-4 4v-3H8v-2h4zm0-9c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8z"
+              />
+            </g>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      className="details-data"
+    >
+      <h3>
+        lastAnnualDividend
+        :
+         
+      </h3>
+      <div
+        className="details-text"
+      >
+        <span />
+        <span>
+          <svg
+            fill="currentColor"
+            height="30px"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 24 24"
+            width="30px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 11V8l4 4-4 4v-3H8v-2h4zm0-9c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8z"
+              />
+            </g>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      className="details-data"
+    >
+      <h3>
+        beta
+        :
+         
+      </h3>
+      <div
+        className="details-text"
+      >
+        <span />
+        <span>
+          <svg
+            fill="currentColor"
+            height="30px"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 24 24"
+            width="30px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 11V8l4 4-4 4v-3H8v-2h4zm0-9c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8z"
+              />
+            </g>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

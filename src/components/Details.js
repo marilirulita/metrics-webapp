@@ -1,10 +1,16 @@
 import { useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import { BsGraphUp } from 'react-icons/bs';
 import { RiArrowRightCircleLine } from 'react-icons/ri';
 
 const Details = () => {
   const location = useLocation();
-  const data = location.state;
+  const [data, setData] = useState({});
+
+  useEffect(() => {
+    setData(location.state);
+  }, [location]);
+
   const selectedData = ['sector', 'industry', 'country', 'marketCap', 'volume', 'lastAnnualDividend', 'beta'];
 
   const filteredData = selectedData.reduce((obj, key) => ({ ...obj, [key]: data[key] }), {});
@@ -36,7 +42,6 @@ const Details = () => {
               <span>{filteredData[key]}</span>
               <span><RiArrowRightCircleLine size="30px" /></span>
             </div>
-
           </div>
         ))}
       </div>

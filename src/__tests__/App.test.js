@@ -1,7 +1,6 @@
 import renderer from 'react-test-renderer';
-import { Link } from 'react-router-dom';
+import { Link, BrowserRouter as Router } from 'react-router-dom';
 import '@testing-library/jest-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { RiArrowLeftSLine } from 'react-icons/ri';
 import store from '../redux/configureStore';
@@ -23,9 +22,9 @@ it('renders correctly', () => {
 it('Link is rendered', () => {
   const component = renderer.create(
     <Router>
-    <Link to="/"><RiArrowLeftSLine size="35px" color="white" /></Link>
+      <Link to="/"><RiArrowLeftSLine size="35px" color="white" /></Link>
     </Router>,
   );
-  let tree = component.toJSON();
+  const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
