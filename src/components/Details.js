@@ -13,9 +13,9 @@ const Details = () => {
     <div className="home-container">
       <div className="header-style">
         <span>
-          <BsGraphUp color="blue" size="200px" />
+          <BsGraphUp color="#b13967" />
         </span>
-        <div className="element-text-style">
+        <div className="header-text-style">
           <h2>{data.companyName}</h2>
           <span>
             $
@@ -24,7 +24,7 @@ const Details = () => {
         </div>
       </div>
       <h4>COMPANY STOCK BREAKDOWN</h4>
-      <div>
+      <div className="detail-section">
         { Object.keys(filteredData).map((key) => (
           <div key={key} className="details-data">
             <h3>
@@ -34,7 +34,7 @@ const Details = () => {
             </h3>
             <div className="details-text">
               <span>{filteredData[key]}</span>
-              <span><RiArrowRightCircleLine size="30px" color="blue" /></span>
+              <span><RiArrowRightCircleLine size="30px" /></span>
             </div>
 
           </div>

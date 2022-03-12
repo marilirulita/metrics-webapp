@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { FaMoneyBillWave } from "react-icons/fa";
 import { RiArrowRightCircleLine } from 'react-icons/ri';
 import { BsGraphUp } from 'react-icons/bs';
 import { getFinancialData } from '../redux/financial/financial';
@@ -24,7 +25,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="header-style">
-        <span><BsGraphUp /></span>
+        <span><FaMoneyBillWave color="#b13967" /></span>
         <h2>NASDAQ</h2>
       </div>
       <h4>MARKET PRICE BY COMPANIES</h4>
