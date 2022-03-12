@@ -23,6 +23,34 @@ a {
   font-family: 'Lato', sans-serif;
 }
 
+.search-bar {
+  display: flex;
+  background-color: #fc5293;
+  justify-content: space-evenly;
+  margin: 5px 0;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  background-color: #fc5293;
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+input::placeholder {
+  color: white;
+  font-style: italic;
+}
+
+.search-bar svg {
+  font-size: 25px;
+  padding: 3px;
+}
+
 .App {
   display: flex;
   flex-direction: column;

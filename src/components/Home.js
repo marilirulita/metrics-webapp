@@ -1,19 +1,30 @@
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { FaMoneyBillWave } from "react-icons/fa";
+import { FaMoneyBillWave } from 'react-icons/fa';
 import { RiArrowRightCircleLine } from 'react-icons/ri';
 import { BsGraphUp } from 'react-icons/bs';
+import { BiSearchAlt } from 'react-icons/bi';
 import { getFinancialData } from '../redux/financial/financial';
 
 const Home = () => {
   const financialData = useSelector((store) => store.financialReducer);
-
+  const [state, setState] = useState([]);
   const dispatch = useDispatch();
+
+  const filterDataToSearch = (str) => {
+    const filteredData = financialData.filter((fin) => fin.companyName
+      .toLowerCase().startsWith(str.toLowerCase()));
+    setState(filteredData);
+  };
 
   useEffect(() => {
     dispatch(getFinancialData());
   }, []);
+
+  useEffect(() => {
+    setState(financialData);
+  }, [financialData]);
 
   const cotainerStyle = {
     display: 'grid',
@@ -28,9 +39,13 @@ const Home = () => {
         <span><FaMoneyBillWave color="#b13967" /></span>
         <h2>NASDAQ</h2>
       </div>
+      <div className="search-bar">
+        <BiSearchAlt />
+        <input type="text" placeholder="Search a company in NASDAQ" onChange={(e) => filterDataToSearch(e.target.value)} />
+      </div>
       <h4>MARKET PRICE BY COMPANIES</h4>
       <div style={cotainerStyle}>
-        {financialData.map((com, i) => {
+        {state.map((com, i) => {
           const index = `kei${i}`;
           change = i % 2 === 0 || i === 0;
           if (!change) {
