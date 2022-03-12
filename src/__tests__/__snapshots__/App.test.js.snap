@@ -1,5 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Link is rendered 1`] = `
+<a
+  href="/"
+  onClick={[Function]}
+>
+  <svg
+    color="white"
+    fill="currentColor"
+    height="35px"
+    stroke="currentColor"
+    strokeWidth="0"
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+    viewBox="0 0 24 24"
+    width="35px"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g>
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"
+      />
+    </g>
+  </svg>
+</a>
+`;
+
 exports[`renders correctly 1`] = `
 <div
   className="App"
