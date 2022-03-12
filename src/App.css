@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  color: #ffffff;
+  color: #fff;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -18,7 +18,7 @@ h4 {
   text-align: center;
 }
 
-span, 
+span,
 a {
   font-family: 'Lato', sans-serif;
 }
@@ -44,6 +44,13 @@ a {
 input::placeholder {
   color: white;
   font-style: italic;
+}
+
+nav svg,
+.header-style svg {
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .search-bar svg {
@@ -72,13 +79,6 @@ nav * {
 
 nav span {
   padding: 5px;
-}
-
-nav svg,
-.header-style svg {
-  padding: 0;
-  height: 100%;
-  width: 100%;
 }
 
 .home-container {
