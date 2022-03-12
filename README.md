@@ -4,11 +4,11 @@
 
 > A mobile web application to check a list of metrics about Financial stock data.
 
-![image]()
+[video](https://drive.google.com/file/d/1DuBfs7tgyw0h3u4lKGQpPRlHpk3DLEjR/view?usp=sharing)
 
 ## Live Preview
 
-> [Web App Link]()
+> [Web App Link](https://622d22073bf38e6536dab9f0--priceless-borg-af9da9.netlify.app/)
 
 ## Built With
 
