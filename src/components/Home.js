@@ -18,9 +18,7 @@ const Home = () => {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
   };
-  const backImage = {
-    color: 'blue',
-  };
+
   const elementStyle = {
     padding: '10px',
     display: 'flex',
@@ -30,29 +28,24 @@ const Home = () => {
     display: 'flex',
     justifyContent: 'space-between',
   };
-  const elementTextSyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    textAlign: 'right',
-    margin: '10px 0',
-  };
+
   return (
     <div className="home-container">
       <div className="header-style">
-        <span className="header-style-chil"><BsGraphUp style={backImage} size="200px" /></span>
-        <h2 className="header-style-chil">NASDAQ</h2>
+        <span><BsGraphUp color="blue" size="200px" /></span>
+        <h2 className="header-style-child">NASDAQ</h2>
       </div>
-      <h4>STATS BY COMPANIES</h4>
+      <h4>MARKET PRICE BY COMPANIES</h4>
       <div style={cotainerStyle}>
         {financialData.map((com, i) => {
           const index = `kei${i}`;
           return (
             <div key={index} style={elementStyle}>
               <div style={elementHeaderStyle}>
-                <span><BsFileBarGraph style={backImage} size="100px" /></span>
+                <span><BsFileBarGraph color="blue" size="100px" /></span>
                 <Link to="/details" state={{ ...com }}><RiArrowRightCircleLine size="30px" color="blue" /></Link>
               </div>
-              <div style={elementTextSyle}>
+              <div className="element-text-style">
                 <h3>{com.companyName}</h3>
                 <span>
                   $
