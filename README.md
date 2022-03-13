@@ -17,22 +17,39 @@ https://user-images.githubusercontent.com/50138343/158038577-1e01372c-7a8c-4bfc-
 - Html, Css & JavaScript linters
 - React.Js and Redux
 
-##### Getting Started
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
 
 - clone the repository by running\
     `git clone git@github.com:marilirulita/metrics-webapp.git`
+    
 - navigate to the folder\
     `cd metrics-webapp`
+    
 - Install packages\
     `npm install`
+    
 - Run the app\
     `npm start`
+    
 - Eject the app\
     `npm run eject`
+    
+- Run tests App\
+    `npm run test`
+    
 - Create build app\
     `npm run build`
+    
 - Test Linters app\
     `npm run check-linters`
+    
+### Prerequisites
+
+- Visual Studio Code
+- Node
+- npm
 
 ## Author
 
