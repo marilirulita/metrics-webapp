@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  color: #fff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+  margin: 5px 0;
+}
+
+h4,
+h3,
+h2 {
+  margin: 0;
+}
+
+h4 {
+  text-align: center;
+}
+
+span,
+a {
+  font-family: 'Lato', sans-serif;
+}
+
+.search-bar {
+  display: flex;
+  background-color: #fc5293;
+  justify-content: space-evenly;
+  margin: 5px 0;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  background-color: #fc5293;
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+input::placeholder {
+  color: white;
+  font-style: italic;
+}
+
+nav svg,
+.header-style svg {
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.search-bar svg {
+  font-size: 25px;
+  padding: 3px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 5px;
+  background-color: #ec4c8a;
+}
+
+nav * {
+  display: flex;
+}
+
+nav span {
+  padding: 5px;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-container h4 {
+  background-color: #df4782;
+}
+
+.header-style {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.header-style span {
+  background-color: #fb5092;
+  padding: 10px;
+  flex: 1;
+}
+
+.header-style div {
+  display: flex;
+  padding: 10px;
+  background-color: #fc5293;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.header-style h2 {
+  display: flex;
+  padding: 10px;
+  background-color: #fc5293;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.element-style {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #dc4681;
+}
+
+.header-style-child {
+  display: flex;
+  margin: 20px;
+}
+
+.element-header-style {
+  display: flex;
+  justify-content: space-between;
+}
+
+.element-header-style span {
+  color: #b13967;
+}
+
+.element-text-style {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin: 10px 0;
+}
+
+.header-text-style {
+  flex-direction: column;
+  text-align: right;
+}
+
+.detail-section {
+  background-color: #e84886;
+}
+
+.details-data {
+  display: flex;
+  padding: 10px 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details-data:nth-child(even) {
+  background-color: #ce4277;
+}
+
+.details-data h3 {
+  margin-right: 15px;
+}
+
+.details-text {
+  display: flex;
+  align-items: center;
+  text-align: end;
+}
+
+.details-text * {
+  margin-left: 5px;
+}
