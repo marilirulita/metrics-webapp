@@ -7,6 +7,10 @@
 https://user-images.githubusercontent.com/50138343/158038577-1e01372c-7a8c-4bfc-9007-867cb979795c.mp4
 
 
+## Project Description Video
+
+https://www.loom.com/share/39ad178811f144eda9dd6f0cf4cdb170
+
 ## Live Preview
 
 > [Web App Link](https://622d22073bf38e6536dab9f0--priceless-borg-af9da9.netlify.app/)
